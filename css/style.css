@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, arial;
+    scroll-behavior: smooth; /*animação de descer a tela*/
+}
+
+header { /*trabalha com o HEAD (HTML)*/
+    text-align: center; /*centraliza horizontalmente o conteúdo de texto (ou links <a> ou imagens <img>*/
+    border-bottom: 1px solid #ccc; /*linha fina inferior / 1px = espessura / solid = linha contínua / #ccc = cor*/
+    padding: 10px; /*distância entre a linha inferior e o conteúdo*/
+
+    nav {
+        a {
+            color: #444; /*define a cor do texto*/
+            font-weight: 600;
+            /*deixa texto em NEGRITO, 600 é a DIMENSÃO*/
+            text-decoration: none;
+            /*tira o sublinhado*/
+            text-transform: uppercase;
+            /*deixa o texto maiusculo*/
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+main {
+    width: 80%;
+    margin: auto;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+h2,
+p {
+    margin: 20px 0;
+}
+
+section {
+    padding: 70px 0;
+}
+
+@media (min-width: 480px) {
+    header {
+        width: 100%;
+        display: inline-block;
+
+        nav {
+            float: right;
+
+            ul {
+                list-style: none; /*retira a bolinha de marcação*/
+                li {
+                    display: inline-block;
+                    padding: 25px;
+                }
+            }
+        }
+
+        .logo {
+            float: left;
+        }
+    }
+
+    main {
+        #quem {
+            .grid {
+                display: grid;
+                grid-template-columns: 30% 70%;
+
+                .coluna {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+/*fim do media*/
